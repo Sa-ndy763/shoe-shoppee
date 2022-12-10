@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Javascript Online Shopping Cart Example</title>
+    
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  
+  </head>
+  <body>
+ <header class="intro">
+
+
+  
+      
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+   <header class="header">
+  <div class="container header__top">
+    <div class="header__logo">
+      <h1 class="header__title">
+        Shoe
+        <span class="header__subtitle">Shoppee</span>
+      </h1>
+    </div>
+    <nav class="nav1">
+      <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="products.html"> PRODUCTS</a></li>
+          <li class="dropdown"><a href="category.html" class="dropbtn"> CATEGORY</a>
+              <div class="dropdown-content">
+                  <a href="mens.html">MEN</a>
+                  <a href="women.html">WOMEN</a>
+                  <a href="kid.html">KIDS</a>
+                  </div>
+          </li>
+          <li><a href="contactus.html"> CONTACT US</a></li>
+          <li><a href="aboutus.html"> ABOUT US</a></li>
+          <li><a href="signin.html"> SignIn </a></li>
+      </ul>
+  </nav>
+    <div class="header__cart">
+      <ul>
+        <li class="header__submenu" id="submenu">
+          <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+</svg> Your Cart</button>
+          <div id="shopping-cart" class="shopping-cart-container">
+            <table id="cart-content">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p class="total-container" id="total-price"></p>
+            <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+            <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="products">
+    <img src="images/contactus.png" alt="image with tools"></img>
+    <div class="header11">
+        <p>Sign In</p>
+      </div>
+    </div>
+    <div class="d1">
+        <form class="form1" name='registration' onSubmit="return formValidation1();" id="form1">
+        <ul>
+            <li><label for="email">Email:</label>&nbsp &nbsp<input type="text" name="email" size="50" style="margin-left: 80px;"/></li><br>
+            <li><label for="ppassword" >Password:</label>&nbsp &nbsp<input type="text" name="ppassword" size="50" /></li><br>
+            <li class="sub1"><input type="submit" name="submit" value="Login"></li>
+            <li class="sub2"><button onclick="window.location.href='signup.html'">Sign Up</button></li>
+        </ul>
+    </form>
+    </div>
+
+<!-- END EDMO HTML (Happy Coding!)-->
+</main>
+
+<footer class="footer1">
+  <div class="f1">
+      <div class="logo1"><img src="images/logo.png" alt="Logo of the website"></div>
+      <p style="margin-top: 50px;">we believe style shouldn't demand <br> a huge investment of time or <br> money. Style should be comfortable,<br> 
+        accessible and easy to achieve</p>
+  </div>
+  <div class="ser1">
+      <p style="font-size: 34px; font-weight:bold">Our Useful Links</p>&nbsp&nbsp&nbsp&nbsp<p>
+      <a href="index.html">Home</a> <br><br> <a href="products.html">Products</a> <br><br> <a href="mens.html">Mens</a> <br><br> <a href="women.html">Women</a> <br><br> <a href="kid.html">Kid</a> <br><br> <a href="contactus.html">Contact Us</a> <br><br> <a href="aboutus.html">About Us</a>
+</p>
+  </div>
+  <div class="hours"> <p style="font-size: 34px; font-weight:bold">Customer Service Hours</p>&nbsp&nbsp&nbsp&nbsp
+      <p>Monday-----------
+      9:00 AM - 6:00 PM <br><br>
+      Tuesday-----------
+      9:00 AM - 6:00 PM <br><br>
+      Wednesday-------
+      9:00 AM - 6:00 PM <br><br>
+      Thursday---------
+      9:00 AM - 6:00 PM <br><br>
+      Friday-------------
+      9:00 AM - 6:00 PM <br><br>
+      Saturday-----------
+      9:00 AM - 6:30 PM</p> 
+      </div>
+</footer>
+<div class="c3">Harpreet Kaur || Gurjeet Kaur || Gurvrinder Singh || Bharti Sagar || Sandeep Singh</div>
+
+<script  src="./js/script.js"></script>
+</body>
+</html>
